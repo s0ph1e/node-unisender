@@ -1,7 +1,13 @@
 {
   "name": "unisender",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "readmeFilename": "README.md",
+  "description": "wrapper for unisender api",
+  "keywords": [
+    "unisender", 
+    "api",
+    "email"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +22,9 @@
     "lodash": "~3.5.0",
     "bluebird": "~2.9.14",
     "request": "~2.53.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/s0ph1e/node-unisender/issues"
+  },
+  "homepage": "https://github.com/s0ph1e/node-unisender"
 }
