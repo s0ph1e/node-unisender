@@ -1,22 +1,25 @@
 var _ = require('lodash');
-var url = require('url');
 
 var transport = require('./utils/transport');
-var methods = require('./prepare-method-body');
+var prepare = require('./prepare-params');
 var defaults = require('./config/defaults');
+var methods = require('./config/methods');
 
 function composeUrl (location, methodName) {
 	return defaults.url + '/' + location + '/api/' + methodName + '?format=json';
 }
 
 function composeBody (apiKey, methodArgs) {
+	methodArgs = methodArgs || {};
 	return _.extend(methodArgs, { api_key: apiKey });
 }
 
-function call (method, name) {
+function call (method) {
 	return function (options) {
-		var endpoint = composeUrl(this.location, name);
-		var body = composeBody(this.api_key, method(options));
+		var params = prepare[method] ? prepare[method](options) : options;
+		
+		var endpoint = composeUrl(this.location, method);
+		var body = composeBody(this.api_key, params);
 
 		return transport.makeRequest(endpoint, body);
 	}
@@ -27,8 +30,8 @@ function UniSender (options) {
 	this.location = options.location || defaults.location;
 }
 
-_.forIn(methods, function (method, name) {
-	UniSender.prototype[name] = call(method, name);
+_.forIn(methods, function (method) {
+	UniSender.prototype[method] = call(method);
 });
 
 module.exports = UniSender;
