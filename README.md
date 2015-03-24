@@ -31,9 +31,9 @@ uniSender.createEmailMessage({
 	body: '<h1>Hello world!</h1>',
 	list_id: 1234567
 }).then(function (response) {
-	if (response.result) {
-		console.log('Message id: ' + response.result.message_id);
-	}
+	console.log('Message id: ' + response.result.message_id);
+}).catch(function (response) {
+	console.log('Error:' + response.error);
 });
 ```
 
