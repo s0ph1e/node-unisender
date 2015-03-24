@@ -10,7 +10,8 @@ function makeRequest (url, body) {
 	};
 
 	return request(options).then(function (response) {
-		return Promise.resolve(JSON.parse(response[0].body));
+		var res = JSON.parse(response[0].body);
+		return res.result ? Promise.resolve(res) : Promise.reject(res);
 	});
 }
 
