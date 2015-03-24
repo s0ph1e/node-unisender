@@ -1,5 +1,5 @@
 # node-unisender
-Sends POST reguest to UniSender API. 
+Sends POST request to UniSender API.
 
 List of available in module methods is in [src/config/methods.js](https://github.com/s0ph1e/node-unisender/blob/master/src/config/methods.js).
 
