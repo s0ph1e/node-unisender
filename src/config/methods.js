@@ -1,42 +1,53 @@
 var methods = [
+	// Lists
 	'getLists',
+	'createList',
+	'updateList',
+	'deleteList',
+	'subscribe',
+	'unsubscribe',
+	'exclude',
 	'importContacts',
 	'exportContacts',
-	'changeTariff',
-	'checkEmail',
-	'checkUserExists',
-	'createCampaign',
+
+	// Messages
 	'createEmailMessage',
-	'createField',
-	'createList',
 	'createSmsMessage',
-	'deleteField',
-	'deleteList',
-	'deleteMessage',
-	'deleteTag',
-	'exclude',
-	'getAvailableTariffs',
-	'getCampaignAggregateStats',
-	'getCampaignDeliveryStats',
+	'createCampaign',
 	'getCampaigns',
 	'getCampaignStatus',
-	'getFields',
+	'sendEmail',
+	'checkEmail',
+	'sendSms',
+	'checkSms',
 	'getMessage',
-	'getPayments',
+	'deleteMessage',
+
+	// Stats
+	'getCampaignAggregateStats',
+	'getCampaignDeliveryStats',
+	'getVisitedLinks',
+
+	// Additional fields and tags
+	'getFields',
+	'createField',
+	'updateField',
+	'deleteField',
 	'getTags',
-	'getTariffs',
+	'deleteTag',
+
+	// Methods for affiliate sites
+	'validateSender',
+	'register',
+	'checkUserExists',
 	'getUserInfo',
 	'getUsers',
-	'getVisitedLinks',
-	'register',
-	'sendEmail',
-	'sendSms',
 	'transferMoney',
-	'unsubscribe',
-	'updateField',
-	'updateList',
-	'validateSender',
-	'checkSms'
+	'getPayments',
+	'getTariffs',
+	'getAvailableTariffs',
+	'changeTariff',
+	'callbacks'
 ];
 
 module.exports = methods;
