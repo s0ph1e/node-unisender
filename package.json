@@ -1,6 +1,6 @@
 {
   "name": "unisender",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "readmeFilename": "README.md",
   "description": "Wrapper for unisender api",
   "keywords": [
