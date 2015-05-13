@@ -1,12 +1,12 @@
 var _ = require('lodash');
 
-var transport = require('./utils/transport');
+var request = require('./make-request');
 var prepare = require('./prepare-params');
 var defaults = require('./config/defaults');
 var methods = require('./config/methods');
 
-function composeUrl (location, methodName) {
-	return defaults.url + '/' + location + '/api/' + methodName + '?format=json';
+function composeUrl (lang, methodName) {
+	return defaults.url + '/' + lang + '/api/' + methodName + '?format=json';
 }
 
 function composeBody (apiKey, methodArgs) {
@@ -17,17 +17,17 @@ function composeBody (apiKey, methodArgs) {
 function call (method) {
 	return function (options) {
 		var params = prepare[method] ? prepare[method](options) : options;
-		
-		var endpoint = composeUrl(this.location, method);
+
+		var endpoint = composeUrl(this.lang, method);
 		var body = composeBody(this.api_key, params);
 
-		return transport.makeRequest(endpoint, body);
+		return request(endpoint, body);
 	}
 }
 
 function UniSender (options) {
 	this.api_key = options.api_key;
-	this.location = options.location || defaults.location;
+	this.lang = options.lang || defaults.lang;
 }
 
 _.forIn(methods, function (method) {

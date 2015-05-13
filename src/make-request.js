@@ -15,6 +15,4 @@ function makeRequest (url, body) {
 	});
 }
 
-module.exports = {
-	makeRequest: makeRequest
-};
+module.exports = makeRequest;

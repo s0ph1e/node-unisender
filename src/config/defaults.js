@@ -1,6 +1,6 @@
 var config = {
 	url: 'http://api.unisender.com',
-	location: 'en'
+	lang: 'en'
 };
 
 module.exports = config;
