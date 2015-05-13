@@ -19,7 +19,7 @@ var UniSender = require('unisender');
 
 var uniSender = new UniSender({
 	api_key: 'YOUR_API_KEY',
-	location: 'ru'              // optional, 'en' by default
+	lang: 'ru'                // optional, 'en' by default
 });
 
 uniSender.getLists().then(console.log);
