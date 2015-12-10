@@ -10,11 +10,11 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover ./node_modules/.bin/_mocha --dir ./coverage --report lcov -- -R spec --recursive ./test"
   },
   "repository": {
-      "type": "git",
-      "url": "git://github.com/s0ph1e/node-unisender.git"
+    "type": "git",
+    "url": "git://github.com/s0ph1e/node-unisender.git"
   },
   "author": "s0ph1e",
   "license": "MIT",
@@ -26,5 +26,14 @@
   "bugs": {
     "url": "https://github.com/s0ph1e/node-unisender/issues"
   },
-  "homepage": "https://github.com/s0ph1e/node-unisender"
+  "homepage": "https://github.com/s0ph1e/node-unisender",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-spies": "^0.7.1",
+    "codeclimate-test-reporter": "^0.1.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "nock": "^3.4.0",
+    "proxyquire": "^1.7.3"
+  }
 }
