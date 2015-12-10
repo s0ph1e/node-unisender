@@ -1,6 +1,13 @@
 # node-unisender
 Sends POST request to UniSender API.
 
+[![Build Status](https://travis-ci.org/s0ph1e/node-unisender.svg)](https://travis-ci.org/s0ph1e/node-unisender)
+[![Test Coverage](https://codeclimate.com/github/s0ph1e/node-unisender/badges/coverage.svg)](https://codeclimate.com/github/s0ph1e/node-unisender/coverage)
+[![Code Climate](https://codeclimate.com/github/s0ph1e/node-unisender/badges/gpa.svg)](https://codeclimate.com/github/s0ph1e/node-unisender)
+[![Dependency Status](https://david-dm.org/s0ph1e/node-unisender.svg?style=flat)](https://david-dm.org/s0ph1e/node-unisender)
+[![Version](https://img.shields.io/npm/v/unisender.svg?style=flat)](https://www.npmjs.org/package/unisender)
+[![Downloads](https://img.shields.io/npm/dm/unisender.svg?style=flat)](https://www.npmjs.org/package/unisender)
+
 List of available in module methods is in [src/config/methods.js](https://github.com/s0ph1e/node-unisender/blob/master/src/config/methods.js).
 
 ## Installation
@@ -37,7 +44,7 @@ uniSender.createEmailMessage({
 });
 ```
 
-Full list of methods and options you can find in [UniSender API Documentation](http://www.unisender.com/ru/help/api/).
+Full list of UniSender methods and options you can find in [UniSender API Documentation](http://www.unisender.com/ru/help/api/).
 
 
 ### Note
