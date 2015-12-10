@@ -19,9 +19,9 @@
   "author": "s0ph1e",
   "license": "MIT",
   "dependencies": {
-    "lodash": "~3.5.0",
-    "bluebird": "~2.9.14",
-    "request": "~2.53.0"
+    "bluebird": "^3.0.6",
+    "lodash": "^3.10.1",
+    "request": "^2.67.0"
   },
   "bugs": {
     "url": "https://github.com/s0ph1e/node-unisender/issues"
