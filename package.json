@@ -1,12 +1,14 @@
 {
   "name": "unisender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "readmeFilename": "README.md",
-  "description": "Wrapper for unisender api",
+  "description": "Promise-based wrapper for unisender api",
   "keywords": [
     "unisender",
     "api",
-    "email"
+    "email",
+    "promise",
+    "wrapper"
   ],
   "main": "index.js",
   "scripts": {
