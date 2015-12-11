@@ -1,5 +1,5 @@
 # node-unisender
-Sends POST request to UniSender API.
+Promise-based wrapper for UniSender API. Sends POST request to UniSender.
 
 [![Build Status](https://travis-ci.org/s0ph1e/node-unisender.svg)](https://travis-ci.org/s0ph1e/node-unisender)
 [![Test Coverage](https://codeclimate.com/github/s0ph1e/node-unisender/badges/coverage.svg)](https://codeclimate.com/github/s0ph1e/node-unisender/coverage)
@@ -48,9 +48,9 @@ Full list of UniSender methods and options you can find in [UniSender API Docume
 
 
 ### Note
-For all methods except `importContacts` you have to pass parameters as described in documentation.
+For all methods except `importContacts` you have to pass parameters as described in [UniSender API Documentation](http://www.unisender.com/ru/help/api/).
 
-To call `importContacts` specify parameters `field_names` and `data` in another way:
+To call `importContacts` specify properties `field_names` and `data` in another way:
 ```javascript
 uniSender.importContacts({
 	field_names: ['email', 'email_list_ids'],
