@@ -1,6 +1,6 @@
 {
   "name": "unisender",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "readmeFilename": "README.md",
   "description": "Promise-based wrapper for unisender api",
   "keywords": [
@@ -31,10 +31,10 @@
   "homepage": "https://github.com/s0ph1e/node-unisender",
   "devDependencies": {
     "chai": "^3.4.1",
-    "codeclimate-test-reporter": "^0.1.1",
+    "codeclimate-test-reporter": "^0.3.1",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
-    "nock": "^3.4.0",
+    "nock": "^7.2.2",
     "proxyquire": "^1.7.3",
     "sinon": "^1.17.2"
   }
