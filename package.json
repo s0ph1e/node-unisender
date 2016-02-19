@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.0.6",
-    "lodash": "^3.10.1",
+    "lodash": "^4.5.0",
     "request": "^2.67.0"
   },
   "bugs": {
