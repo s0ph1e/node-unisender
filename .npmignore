@@ -1,7 +1,0 @@
-node_modules
-coverage
-test
-.gitignore
-.idea
-.DS_Store
-.travis.yml
