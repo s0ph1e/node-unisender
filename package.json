@@ -23,7 +23,7 @@
   "dependencies": {
     "bluebird": "^3.0.6",
     "lodash": "^4.5.0",
-    "request": "^2.67.0"
+    "request": "^2.81.0"
   },
   "bugs": {
     "url": "https://github.com/s0ph1e/node-unisender/issues"
