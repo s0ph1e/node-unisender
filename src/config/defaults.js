@@ -1,5 +1,5 @@
 var config = {
-	url: 'http://api.unisender.com',
+	url: 'https://api.unisender.com',
 	lang: 'en'
 };
 
