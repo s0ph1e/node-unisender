@@ -2,7 +2,7 @@ var Promise = require('bluebird');
 var request = Promise.promisify(require('request'));
 var _ = require('lodash');
 
-function makeRequest (url, body) {
+function makeRequest(url, body) {
 	var options = {
 		method: 'post',
 		url: url,
@@ -11,7 +11,13 @@ function makeRequest (url, body) {
 
 	return request(options).then(function (response) {
 		var res = JSON.parse(response.body);
-		return res.result ? Promise.resolve(res) : Promise.reject(res);
+		if (!res.result) {
+			var error = new Error(res.error);
+			error.code = res.error.code;
+			error.message = res.error.message;
+			throw error;
+		}
+		return Promise.resolve(res);
 	});
 }
 
