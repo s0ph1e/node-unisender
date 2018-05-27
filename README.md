@@ -6,7 +6,7 @@ Promise-based wrapper for UniSender API. Sends POST request to UniSender.
 [![Code Climate](https://codeclimate.com/github/s0ph1e/node-unisender/badges/gpa.svg)](https://codeclimate.com/github/s0ph1e/node-unisender)
 [![Dependency Status](https://david-dm.org/s0ph1e/node-unisender.svg?style=flat)](https://david-dm.org/s0ph1e/node-unisender)
 [![Version](https://img.shields.io/npm/v/unisender.svg?style=flat)](https://www.npmjs.org/package/unisender)
-[![Downloads](https://img.shields.io/npm/dm/unisender.svg?style=flat)](https://www.npmjs.org/package/unisender)
+[![Downloads](https://img.shields.io/npm/dm/unisender.svg?style=flat)](https://www.npmjs.org/package/unisender) [![Greenkeeper badge](https://badges.greenkeeper.io/s0ph1e/node-unisender.svg)](https://greenkeeper.io/)
 
 List of available in module methods is in [src/config/methods.js](https://github.com/s0ph1e/node-unisender/blob/master/src/config/methods.js).
 
