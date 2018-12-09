@@ -1,7 +1,7 @@
 # node-unisender
 Promise-based wrapper for UniSender API. Sends POST request to UniSender.
 
-[![Build Status](https://travis-ci.org/s0ph1e/node-unisender.svg)](https://travis-ci.org/s0ph1e/node-unisender)
+[![Build Status](https://travis-ci.org/s0ph1e/node-unisender.svg?branch=master)](https://travis-ci.org/s0ph1e/node-unisender)
 [![Test Coverage](https://codeclimate.com/github/s0ph1e/node-unisender/badges/coverage.svg)](https://codeclimate.com/github/s0ph1e/node-unisender/coverage)
 [![Code Climate](https://codeclimate.com/github/s0ph1e/node-unisender/badges/gpa.svg)](https://codeclimate.com/github/s0ph1e/node-unisender)
 [![Dependency Status](https://david-dm.org/s0ph1e/node-unisender.svg?style=flat)](https://david-dm.org/s0ph1e/node-unisender)
