@@ -36,7 +36,7 @@
     "mocha": "^5.2.0",
     "nock": "^10.0.0",
     "proxyquire": "^2.0.1",
-    "sinon": "^6.0.0"
+    "sinon": "^7.3.1"
   },
   "files": [
     "index.js",
